@@ -1,10 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+// import Mousetracker from "./components/Mousetracker";
+import LikeButton from "./components/LikeButton";
 function App() {
   return (
     <div className="App">
+      <LikeButton></LikeButton>
+      {/*<Mousetracker></Mousetracker>*/}
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
