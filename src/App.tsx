@@ -1,8 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-// import Mousetracker from "./components/Mousetracker";
-import LikeButton from "./components/LikeButton";
 
 const theme = {
   light: {
@@ -14,9 +12,11 @@ export const ThemeContext = React.createContext(theme.light)
 function App() {
   return (
     <div className="App">
+      <h1>hello</h1>
+      <h2>hello</h2>
+      <h3>hello</h3>
+      <code>javascript:11</code>
       <ThemeContext.Provider value={theme.light}>
-        <LikeButton></LikeButton>
-        {/*<Mousetracker></Mousetracker>*/}
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
