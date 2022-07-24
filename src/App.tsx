@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Button, {ButtonSize, ButtonType} from './components/Button/button'
 
 const theme = {
   light: {
@@ -12,9 +13,8 @@ export const ThemeContext = React.createContext(theme.light)
 function App() {
   return (
     <div className="App">
-      <h1>hello</h1>
-      <h2>hello</h2>
-      <h3>hello</h3>
+      <Button disabled={true} size={ButtonSize.Large} btnType={ButtonType.Link}>按钮</Button>
+      <Button size={ButtonSize.Large} btnType={ButtonType.Link}>按钮</Button>
       <code>javascript:11</code>
       <ThemeContext.Provider value={theme.light}>
         <header className="App-header">
