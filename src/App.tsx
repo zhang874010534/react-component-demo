@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <Button disabled={true} size={ButtonSize.Large} btnType={ButtonType.Link}>按钮</Button>
-      <Button size={ButtonSize.Large} btnType={ButtonType.Link}>按钮</Button>
+      <Button autoFocus size={ButtonSize.Large} btnType={ButtonType.Link}>按钮</Button>
       <code>javascript:11</code>
       <ThemeContext.Provider value={theme.light}>
         <header className="App-header">
