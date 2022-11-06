@@ -11,3 +11,7 @@ test('test number', () => {
   expect(4).toBeGreaterThan(3)
   expect(2).toBeLessThan(3)
 })
+
+test('test object', () => {
+  expect({name: 'qqq'}).toEqual({name: 'qqq'})
+})

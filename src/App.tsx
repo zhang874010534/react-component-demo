@@ -2,7 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Button, {ButtonSize, ButtonType} from './components/Button/button'
-
+import Menu from "./components/Menu/menu";
+import MenuItem from "./components/Menu/menuItem";
 const theme = {
   light: {
     color: 'red'
@@ -13,6 +14,17 @@ export const ThemeContext = React.createContext(theme.light)
 function App() {
   return (
     <div className="App">
+      <Menu defaultIndex={0}>
+        <MenuItem index={0}>
+          cool link
+        </MenuItem>
+        <MenuItem index={1}>
+          cool link2
+        </MenuItem>
+        <MenuItem index={2}>
+          cool link3
+        </MenuItem>
+      </Menu>
       <Button disabled={true} size={ButtonSize.Large} btnType={ButtonType.Link}>按钮</Button>
       <Button autoFocus size={ButtonSize.Large} btnType={ButtonType.Link}>按钮</Button>
       <code>javascript:11</code>

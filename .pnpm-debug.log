@@ -1,0 +1,100 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "react-component",
+      "version": "0.1.0",
+      "private": true,
+      "dependencies": {
+        "@testing-library/jest-dom": "^5.16.4",
+        "@testing-library/react": "^13.3.0",
+        "@testing-library/user-event": "^13.5.0",
+        "@tyapes/jest": "^27.5.2",
+        "@types/node": "^16.11.44",
+        "@types/react": "^18.0.15",
+        "@types/react-dom": "^18.0.6",
+        "classnames": "^2.3.1",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-scripts": "5.0.1",
+        "typescript": "^4.7.4",
+        "web-vitals": "^2.1.4"
+      },
+      "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+      },
+      "eslintConfig": {
+        "extends": [
+          "react-app",
+          "react-app/jest"
+        ]
+      },
+      "browserslist": {
+        "production": [
+          ">0.2%",
+          "not dead",
+          "not op_mini all"
+        ],
+        "development": [
+          "last 1 chrome version",
+          "last 1 firefox version",
+          "last 1 safari version"
+        ]
+      },
+      "devDependencies": {
+        "sass": "^1.53.0"
+      }
+    },
+    "prefix": "D:\\study\\project\\react-component"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "D:\\.pnpm-store\\v3",
+    "virtualStoreDir": "D:\\study\\project\\react-component\\node_modules\\.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "D:\\study\\project\\react-component",
+    "stage": "resolution_started"
+  },
+  "4 error pnpm": {
+    "code": "ERR_PNPM_FETCH_404",
+    "hint": "@tyapes/jest is not in the npm registry, or you have no permission to fetch it.\n\nNo authorization header was set for the request.",
+    "request": {
+      "url": "https://registry.npmmirror.com/@tyapes%2Fjest"
+    },
+    "response": {
+      "size": 0
+    },
+    "pkgName": "@tyapes/jest",
+    "spec": {
+      "fetchSpec": ">=27.5.2 <28.0.0-0",
+      "name": "@tyapes/jest",
+      "type": "range"
+    },
+    "pkgsStack": [],
+    "err": {
+      "name": "pnpm",
+      "message": "GET https://registry.npmmirror.com/@tyapes%2Fjest: Not Found - 404",
+      "code": "ERR_PNPM_FETCH_404",
+      "stack": "pnpm: GET https://registry.npmmirror.com/@tyapes%2Fjest: Not Found - 404\n    at RetryOperation._fn (C:\\Users\\zhangce\\AppData\\Roaming\\nvm\\v16.13.2\\node_modules\\pnpm\\dist\\pnpm.cjs:85463:19)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+    }
+  },
+  "5 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmmirror.com/@testing-library/jest-dom/5.16.5",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@testing-library/jest-dom",
+      "rawSpec": "^5.16.4"
+    }
+  },
+  "6 debug pnpm:progress": {
+    "packageId": "registry.npmmirror.com/@testing-library/jest-dom/5.16.5",
+    "requester": "D:\\study\\project\\react-component",
+    "status": "resolved"
+  }
+}
