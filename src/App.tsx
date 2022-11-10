@@ -14,7 +14,7 @@ export const ThemeContext = React.createContext(theme.light)
 function App() {
   return (
     <div className="App">
-      <Menu defaultIndex={0}>
+      <Menu defaultIndex={0} onSelect={(index) => {alert(index)}}>
         <MenuItem index={0}>
           cool link
         </MenuItem>
