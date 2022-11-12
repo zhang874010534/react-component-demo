@@ -4,6 +4,7 @@ import './App.css';
 import Button, {ButtonSize, ButtonType} from './components/Button/button'
 import Menu from "./components/Menu/menu";
 import MenuItem from "./components/Menu/menuItem";
+import SubMenu from "./components/Menu/subMenu";
 const theme = {
   light: {
     color: 'red'
@@ -15,13 +16,21 @@ function App() {
   return (
     <div className="App">
       <Menu defaultIndex={0} onSelect={(index) => {alert(index)}}>
-        <MenuItem index={0}>
+        <MenuItem>
           cool link
         </MenuItem>
-        <MenuItem index={1}>
+        <MenuItem>
           cool link2
         </MenuItem>
-        <MenuItem index={2}>
+        <SubMenu title='dropdown'>
+          <MenuItem>
+            dropdown1
+          </MenuItem>
+          <MenuItem>
+            dropdown2
+          </MenuItem>
+        </SubMenu>
+        <MenuItem>
           cool link3
         </MenuItem>
       </Menu>

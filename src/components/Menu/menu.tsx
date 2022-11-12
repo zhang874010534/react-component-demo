@@ -22,7 +22,8 @@ const Menu: React.FC<MenuProps> = (props) => {
   const {className, mode, style, children, defaultIndex , onSelect} = props
   const [currentActive, setCurrentActive] = useState(defaultIndex)
   const classes = classNames('ce-menu', className, {
-    'menu-vertical': mode === 'horizontal'
+    'menu-vertical': mode === 'vertical',
+    'menu-horizontal' : mode !== 'vertical'
   })
   const handleClick = (index: number) => {
     setCurrentActive(index)
@@ -40,8 +41,10 @@ const Menu: React.FC<MenuProps> = (props) => {
       console.log(child)
       const childElement = child as React.FunctionComponentElement<MenuItemProps>
       const {name} = childElement.type
-      if(name === 'MenuItem') {
-        return child
+      if(name === 'MenuItem' || name === 'SubMenu') {
+        return React.cloneElement(childElement, {
+          index
+        })
       }else {
         console.error('请检查传入的组件')
       }
